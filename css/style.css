@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.85 linear;
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  scale: 0.85;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: 22px;
+  text-align: center;
+}
+
+section, header, main, aside, footer {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.container .blok_text, .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.container .img img, .container .img, .container, .wrapper:hover .container, .wrapper:hover, .wrapper {
+  transition: all 1s linear;
+}
+
+.wrapper .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #b10404;
+  border-radius: 50%;
+}
+.wrapper:hover {
+  border-radius: 20px;
+}
+.wrapper:hover .container {
+  display: flex;
+}
+.wrapper .menu {
+  padding: 30px 30px;
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+}
+
+.container {
+  width: 800px;
+  padding: 50px;
+  flex-direction: row-reverse;
+  display: none;
+}
+.container .blok_text {
+  width: 400px;
+  flex-direction: column;
+  gap: 30px;
+  text-align: justify;
+}
+.container .img {
+  position: relative;
+  width: 400px;
+}
+.container .img img {
+  width: 600px;
+  height: auto;
+  top: -200px;
+  left: -100px;
+}

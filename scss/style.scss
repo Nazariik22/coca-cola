@@ -1,0 +1,53 @@
+@import '_normalize.scss';
+
+.wrapper{
+    @extend %transition;
+    color: white;
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    background: #b10404;
+    border-radius: 50%;
+    &:hover{
+        border-radius: 20px;
+        @extend %transition;
+    }
+    &:hover .container{
+        display: flex;
+        @extend %transition;
+    }
+    .menu{
+        padding: 30px 30px;
+        width: 200px;
+        height: 200px;
+       font-size: 30px;
+       @extend %flex_center;
+    }
+}
+.container{
+    @extend %transition;
+    width: 800px;
+    padding: 50px;
+    @extend %flex;
+    flex-direction: row-reverse;
+    .blok_text{
+        width: 400px;
+        @extend %flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: justify;
+    }
+    .img{
+        @extend %transition;
+       position: relative; 
+       width: 400px;
+       img{
+        @extend %transition;
+        width: 600px;
+        height: auto;
+        top: -200px;
+        left: -100px;
+       }
+    }
+    display: none;
+}
